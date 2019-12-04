@@ -21,15 +21,15 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="00000"
-            android:textSize="24sp"
+            android:textSize="26sp"
 
 
             ></TextView>
 
         <ImageView
             android:id="@+id/img_heart3"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:src="@drawable/iconheart"
 
@@ -37,8 +37,9 @@
 
         <ImageView
             android:id="@+id/img_heart2"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
             android:layout_toLeftOf="@id/img_heart3"
             android:src="@drawable/iconheart"
 
@@ -46,8 +47,9 @@
 
         <ImageView
             android:id="@+id/img_heart1"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
             android:layout_toLeftOf="@id/img_heart2"
             android:src="@drawable/iconheart"></ImageView>
 
@@ -55,568 +57,604 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/dogs"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        android:paddingBottom="40dp">
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_layout_top"
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/img_dog1"
-            android:layout_width="0dp"
-            android:layout_height="75dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/happydog"/>
 
-        <ImageView
-            android:id="@+id/img_dog2"
-            android:layout_width="0dp"
-            android:layout_height="75dp"
+        <LinearLayout
+            android:id="@+id/cats1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/main_layout_top"
             android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/happydog"/>
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/img_dog3"
-            android:layout_width="0dp"
-            android:layout_height="75dp"
+            <ImageView
+                android:id="@+id/img_cat11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cats2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cats1"
             android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/happydog"/>
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cat21"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat22"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat23"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cats3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cats2"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cat31"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat32"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat33"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cats4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cats3"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cat41"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat42"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat43"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cats5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cats4"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cat51"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat52"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat53"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cats6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cats5"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cat61"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat62"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat63"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cats7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cats6"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cat71"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat72"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat73"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cats8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cats7"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cat81"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat82"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat83"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cats9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cats8"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cat91"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat92"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat93"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cats10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cats9"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cat101"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat102"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat103"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cats11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cats10"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cat111"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat112"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat113"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cats12"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cats11"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cat121"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat122"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat123"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cats13"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cats12"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cat131"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat132"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat133"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cats14"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/cats13"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cat141"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat142"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+            <ImageView
+                android:id="@+id/img_cat143"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/angrycat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
 
     <LinearLayout
-        android:id="@+id/cats1"
-        android:layout_below="@+id/main_layout_top"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_layout_top"
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/img_cat11"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
 
-        <ImageView
-            android:id="@+id/img_cat12"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14"
+            android:orientation="horizontal" />
 
-        <ImageView
-            android:id="@+id/img_cat13"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
+        <LinearLayout
+            android:id="@+id/dogs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_dog1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/happydog" />
+
+            <ImageView
+                android:id="@+id/img_dog2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/happydog" />
+
+            <ImageView
+                android:id="@+id/img_dog3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/happydog" />
+
+        </LinearLayout>
 
     </LinearLayout>
-
-
-
-    <LinearLayout
-        android:id="@+id/cats2"
-        android:layout_below="@+id/cats1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/img_cat21"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat22"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat23"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/cats3"
-        android:layout_below="@+id/cats2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/img_cat31"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat32"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat33"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/cats4"
-        android:layout_below="@+id/cats3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/img_cat41"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat42"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat43"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/cats5"
-        android:layout_below="@+id/cats4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/img_cat51"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat52"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat53"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/cats6"
-        android:layout_below="@+id/cats5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/img_cat61"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat62"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat63"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/cats7"
-        android:layout_below="@+id/cats6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/img_cat71"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat72"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat73"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/cats8"
-        android:layout_below="@+id/cats7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/img_cat81"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat82"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat83"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/cats9"
-        android:layout_below="@+id/cats8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/img_cat91"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat92"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat93"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/cats10"
-        android:layout_below="@+id/cats9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/img_cat101"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat102"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat103"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/cats11"
-        android:layout_below="@+id/cats10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/img_cat111"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat112"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat113"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/cats12"
-        android:layout_below="@+id/cats11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/img_cat121"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat122"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat123"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/cats13"
-        android:layout_below="@+id/cats12"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/img_cat131"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat132"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat133"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/cats14"
-        android:layout_below="@+id/cats13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/img_cat141"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat142"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-        <ImageView
-            android:id="@+id/img_cat143"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:src="@drawable/angrycat"/>
-
-    </LinearLayout>
-
-
-
-
-
 
     <RelativeLayout
         android:id="@+id/main_btn_leftRightBtn"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
 
         <ImageButton
             android:id="@+id/btn_moveRight"
             android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:background="#00F44336"
             android:src="@drawable/moverightbtn"></ImageButton>
@@ -624,7 +662,7 @@
         <ImageButton
             android:id="@+id/btn_moveLeft"
             android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:background="#00FFFFFF"
             android:src="@drawable/moveleftbtn"></ImageButton>

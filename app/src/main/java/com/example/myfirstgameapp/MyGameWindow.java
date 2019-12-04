@@ -21,10 +21,8 @@ import android.os.Handler;
 
 public class MyGameWindow extends AppCompatActivity {
     // final paramaters
-    // TODO: 04/12/2019 CAT_STEPS changes depends on screen height, should make it the same for
-    //  all screens
 
-    final int LEFT_POS_DOG = 0, RIGHT_POS_DOG = 2, CAT_ROWS = 14, MAX = 2, MIN = 0, CAT_STEPS = 9;
+    final int LEFT_POS_DOG = 0, RIGHT_POS_DOG = 2, CAT_ROWS = 14, MAX = 2, MIN = 0, CAT_STEPS = 13;
 
 
     // Image views
@@ -54,7 +52,6 @@ public class MyGameWindow extends AppCompatActivity {
         // loopFunc();
 
     }
-
 
 
     private void initComponents() {
@@ -185,7 +182,7 @@ public class MyGameWindow extends AppCompatActivity {
             angryCats[col][row - 1].setVisibility(View.INVISIBLE);
         if (row < CAT_ROWS)
             angryCats[col][row].setVisibility(View.VISIBLE);
-        if (row == 10) { //10 should change!
+        if (row == CAT_STEPS) { //10 should change!
             checkCollision(col);
         }
 //            if (row == CAT_ROWS) {
@@ -236,7 +233,7 @@ public class MyGameWindow extends AppCompatActivity {
 
     private void checkCollision(int col) {
         if (dogPos == col && pomeranians[dogPos].getVisibility() == View.VISIBLE
-                && angryCats[col][10].getVisibility() == View.VISIBLE && !gameOver) {
+                && angryCats[col][CAT_STEPS].getVisibility() == View.VISIBLE && !gameOver) {
             removeHeart();
             animateDog(pomeranians[dogPos]);
             vibrate();
