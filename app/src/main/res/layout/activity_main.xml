@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/finalimg"
+    android:background="@drawable/img_background_final"
     >
 
 
@@ -15,29 +15,49 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="100dp"
         android:layout_weight="1"
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_startGame"
+            android:id="@+id/btn_slowGame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#00FFFFFF"
-            android:text="Start Playing"
+            android:text="SLOW Game"
+            android:textColor="#C21D11"
+            android:textSize="23sp" />
+        <Button
+            android:id="@+id/btn_fastGame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:text="fast Game"
+            android:textColor="#C21D11"
+            android:textSize="23sp" />
+        <Button
+            android:id="@+id/btn_sensorGame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:text="sensor Game"
             android:textColor="#C21D11"
             android:textSize="23sp" />
 
         <Button
-            android:id="@+id/btn_howToPlay"
+            android:id="@+id/btn_MapActivity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#00FFFFFF"
-            android:text="How To Play"
+            android:text="go to map"
             android:textColor="#C21D11"
             android:textSize="23sp" />
+
+
 
     </LinearLayout>
 

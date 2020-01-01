@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/firstimg"
+    android:background="@drawable/img_background_first"
     tools:context=".GameOverActivity">
 
     <TextView
@@ -13,35 +13,69 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GAME OVER"
-        android:layout_marginTop="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
         android:textColor="#C21D11"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:textStyle="bold|italic" />
 
     <TextView
-        android:id="@+id/txt_finalScore"
+        android:id="@+id/txt_yourScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="score"
+        android:textSize="23sp"
+        android:layout_marginTop="20dp"
+        android:text="score: "
         android:textColor="#C21D11"
-        android:textSize="27sp">
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_gameOver"
+        ></TextView>
 
-    </TextView>
+    <EditText
+        android:id="@+id/editTxt_playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_below="@id/txt_yourScore"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColorHint="#C21D11"
+        android:hint="Enter your name"></EditText>
 
+<TextView
+
+    android:id="@+id/txt_notHighScore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="not in TOP10"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:textColor="#C21D11"
+    android:layout_below="@id/editTxt_playerName"
+    android:textSize="25sp"
+    ></TextView>
 
 
     <Button
+        android:id="@+id/button_highScoreLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top10 scores"
+        android:layout_below="@id/txt_notHighScore"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:background="#00FFFFFF"
+        android:textSize="23sp"
+        android:textColor="#C21D11" />
 
+    <Button
         android:id="@+id/button_playAgain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play Again"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button_highScoreLayout"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="220dp"
         android:background="#00FFFFFF"
         android:textSize="23sp"
         android:textColor="#C21D11" />

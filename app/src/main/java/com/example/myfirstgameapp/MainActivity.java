@@ -1,25 +1,19 @@
 package com.example.myfirstgameapp;
 
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.Toast;
 
-import static android.view.View.SYSTEM_UI_FLAG_FULLSCREEN;
-import static android.view.View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
-import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
-import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
-import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_startGame, btn_howToPlay;
+    private Button btn_slowGame, btn_fastGame, btn_sensorGame,btn_MapActivity;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,35 +24,51 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initComponents();
+
         playFunctions();
     }
 
-    public void playFunctions() {
-        pressButtonStartGame();
-        pressButtonHowToPlay();
-    }
-
     public void initComponents() {
-        btn_howToPlay = findViewById(R.id.btn_howToPlay);
-        btn_startGame = findViewById(R.id.btn_startGame);
+        btn_slowGame = findViewById(R.id.btn_slowGame);
+        btn_fastGame = findViewById(R.id.btn_fastGame);
+        btn_sensorGame = findViewById(R.id.btn_sensorGame);
+        btn_MapActivity= findViewById(R.id.btn_MapActivity);
     }
 
-    public void pressButtonHowToPlay() {
-        btn_howToPlay.setOnClickListener(new View.OnClickListener() {
+    public void playFunctions() {
+
+        btn_slowGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "not working for now :(", Toast.LENGTH_SHORT).show();
+                goToIntent(Consts.SLOW_INDEX);
+            }
+        });
+        btn_fastGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToIntent(Consts.FAST_INDEX);
+            }
+        });
+        btn_sensorGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToIntent(Consts.SENSOR_INDEX);
+            }
+        });
+        btn_MapActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Map_Activity.class);
+                startActivity(intent);
             }
         });
     }
 
-    public void pressButtonStartGame() {
-        btn_startGame.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startGameIntent = new Intent(getApplicationContext(), MyGameWindow.class);
-                startActivity(startGameIntent);
-            }
-        });
+    private void goToIntent(int gameType) {
+        Intent myIntent = new Intent(MainActivity.this, MyGameWindow.class);
+        Bundle b = new Bundle();
+        b.putInt(Consts.GAME_SPEED, gameType);
+        myIntent.putExtras(b);
+        MainActivity.this.startActivity(myIntent);
     }
 }
