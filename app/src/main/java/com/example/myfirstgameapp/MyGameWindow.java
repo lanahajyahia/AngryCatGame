@@ -81,8 +81,8 @@ public class MyGameWindow extends AppCompatActivity {
 
     private void manageGameSpeed() {
         Bundle bundle = getIntent().getExtras();
-        gameType = bundle.getInt(Consts.GAME_SPEED);
         if (bundle != null) {
+            gameType = bundle.getInt(Consts.GAME_SPEED);
             if (gameType == Consts.SLOW_INDEX) {
                 gameSpeed = Consts.SLOW_SPEED;
 
@@ -91,7 +91,6 @@ public class MyGameWindow extends AppCompatActivity {
             } else if (gameType == Consts.SENSOR_INDEX) {
                 sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
                 sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-                sensorManager.registerListener(sensorEventListener, sensor, SensorManager.SENSOR_DELAY_NORMAL);
                 moveRight.setVisibility(View.INVISIBLE);
                 moveLeft.setVisibility(View.INVISIBLE);
                 gameSpeed = Consts.SLOW_SPEED;
@@ -104,13 +103,20 @@ public class MyGameWindow extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         continue_game = false;
-        sensorManager.unregisterListener(sensorEventListener);
+
+        if (sensorManager != null) {
+            sensorManager.unregisterListener(sensorEventListener);
+        }
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         continue_game = true;
+
+        if (gameType == Consts.SENSOR_INDEX) {
+            sensorManager.registerListener(sensorEventListener, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+        }
         catsInvisible();
 
         loopOne();
@@ -422,7 +428,7 @@ public class MyGameWindow extends AppCompatActivity {
         Runnable myRun = new Runnable() {
             @Override
             public void run() {
-                    scoreCount();
+                scoreCount();
                 int catShowCol = (int) ((Math.random() * ((Consts.MAX_DOG - Consts.MIN_DOG) + 1))
                         + Consts.MIN_DOG);
                 int meatShowCol = (int) ((Math.random() * ((Consts.MAX_DOG - Consts.MIN_DOG) + 1))
